@@ -1,0 +1,217 @@
+<https://www.bim-sis.de/ontology/damage/srmo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://www.w3.org/2002/07/owl#versionIRI> <https://www.bim-sis.de/ontology/damage/srmo/0.1> .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Al-Hakam Hamdan" .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Peter Katranuschkov" .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/dc/terms/description> "Ontology that defines renovation measures applied for stone maintenance."@en .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/dc/terms/issued> "2021-01-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/1.0" .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/dc/terms/modified> "2021-08-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/dc/terms/title> "Stone Renovation Measures Ontology"@en .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "srmo" .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.bim-sis.de/ontology/damage/srmo#" .
+<https://www.bim-sis.de/ontology/damage/srmo> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask
+<https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.bim-sis.de/ontology/damage/sco#StoneComponent> .
+<https://www.bim-sis.de/ontology/damage/sco#StoneComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> .
+<https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask> <http://www.w3.org/2000/01/rdf-schema#label> "Empfohlene Sanierungsmaßnahme"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended repair task"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# https://w3id.org/cto#RepairTask
+<https://w3id.org/cto#RepairTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.bim-sis.de/ontology/damage/sco#StoneComponent
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#Anchoring
+<https://www.bim-sis.de/ontology/damage/srmo#Anchoring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#Anchoring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#Anchoring> <http://www.w3.org/2000/01/rdf-schema#label> "Anchoring"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Anchoring> <http://www.w3.org/2000/01/rdf-schema#label> "Verankern"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment
+<https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning> .
+<https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment> <http://www.w3.org/2000/01/rdf-schema#comment> "Stone cleaning measure that involves the use of biocides in order to deter, render harmless or destroy harmful organisms."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "Biocidal Treatment"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "Biozide Behandlung"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#Bracing
+<https://www.bim-sis.de/ontology/damage/srmo#Bracing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#Bracing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#Bracing> <http://www.w3.org/2000/01/rdf-schema#label> "Bracing"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Bracing> <http://www.w3.org/2000/01/rdf-schema#label> "Verklammern"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning
+<https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#Cleaning> .
+<https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning> <http://www.w3.org/2000/01/rdf-schema#comment> "Stone Cleaning measure that involves the use of chemical substances."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical Cleaning"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Chemische Abnahme"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#Cleaning
+<https://www.bim-sis.de/ontology/damage/srmo#Cleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#Cleaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> .
+<https://www.bim-sis.de/ontology/damage/srmo#Cleaning> <http://www.w3.org/2000/01/rdf-schema#comment> "Renovation measure that aims for cleaning a stones surface from impuritites and contamination."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Cleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Cleaning"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Cleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Reinigung"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#CrackFilling
+<https://www.bim-sis.de/ontology/damage/srmo#CrackFilling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#CrackFilling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#CrackFilling> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure that fills the crack of a stone. Usually does not fix the damage source, thus a reoccurence of the same damage is possible."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#CrackFilling> <http://www.w3.org/2000/01/rdf-schema#label> "Crack Filling"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#CrackFilling> <http://www.w3.org/2000/01/rdf-schema#label> "Rissverfüllung"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#DryCleaning
+<https://www.bim-sis.de/ontology/damage/srmo#DryCleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#DryCleaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning> .
+<https://www.bim-sis.de/ontology/damage/srmo#DryCleaning> <http://www.w3.org/2000/01/rdf-schema#comment> "Cleaning measure that does not involve the use of wet substances, such as water to clean the stone."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#DryCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Dry Cleaning"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#DryCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Trockenreinigung"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#Flaming
+<https://www.bim-sis.de/ontology/damage/srmo#Flaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#Flaming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning> .
+<https://www.bim-sis.de/ontology/damage/srmo#Flaming> <http://www.w3.org/2000/01/rdf-schema#comment> "Application of high temperature to the surface of stones to remove organic material through burning."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Flaming> <http://www.w3.org/2000/01/rdf-schema#label> "Abflammen"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#Flaming> <http://www.w3.org/2000/01/rdf-schema#label> "Flame"@en .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure
+<https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure> <http://www.w3.org/2000/01/rdf-schema#comment> "Inspection and repair of minor defects or damages on the stone to prevent their aggravation."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Measure"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure> <http://www.w3.org/2000/01/rdf-schema#label> "Wartungsarbeiten"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning
+<https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#Cleaning> .
+<https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning> <http://www.w3.org/2000/01/rdf-schema#comment> "Stone Cleaning measure that involves the use of mechanic-based procedures to remove inpurities and contamination."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanical Cleaning"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanische Abnahme"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#Needling
+<https://www.bim-sis.de/ontology/damage/srmo#Needling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#Needling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#Needling> <http://www.w3.org/2000/01/rdf-schema#label> "Needling"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Needling> <http://www.w3.org/2000/01/rdf-schema#label> "Vernadeln"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure
+<https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Constructive measure that does not significantly restore the structural capacity of the stone."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Nicht Statisch-Konstruktive Maßnahmen"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Non-structural constructive measures"@en .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#Plastering
+<https://www.bim-sis.de/ontology/damage/srmo#Plastering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#Plastering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#Plastering> <http://www.w3.org/2000/01/rdf-schema#comment> "Applies or renews the plaster of the building element."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Plastering> <http://www.w3.org/2000/01/rdf-schema#label> "Neuputz"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#Plastering> <http://www.w3.org/2000/01/rdf-schema#label> "Plastering"@en .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#Pressing
+<https://www.bim-sis.de/ontology/damage/srmo#Pressing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#Pressing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#Pressing> <http://www.w3.org/2000/01/rdf-schema#label> "Pressing"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#Pressing> <http://www.w3.org/2000/01/rdf-schema#label> "Verpressen"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure that involves the use of biocides in order to prevent the settlement of organic material on the stone."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "Preventive Biocidal Treatment"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "Präventive Biozide Behandlung"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> .
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure or steps taken for preventing the stone deterioration preemptively before damages or defects occur."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Preventive Measure"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Präventive Maßnahme"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure
+<https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> .
+<https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure, which secures the stone and prevent further degradation of its material due to structural effects."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Securing Measure"@en .
+<https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Sicherungsmaßnahme"@de .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#StoneComplement
+<https://www.bim-sis.de/ontology/damage/srmo#StoneComplement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneComplement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneComplement> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure in which missing parts of a stone are complemented."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneComplement> <http://www.w3.org/2000/01/rdf-schema#label> "Steinergänzung"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneComplement> <http://www.w3.org/2000/01/rdf-schema#label> "Stone Complement"@en .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask
+<https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cto#RepairTask> .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A repair task that specifically aims for the renovation of deteriorated stone structures."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> <http://www.w3.org/2000/01/rdf-schema#label> "Steinsanierungsmaßnahme"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> <http://www.w3.org/2000/01/rdf-schema#label> "Stone repair task"@en .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement
+<https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask> .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure in which a stone is completely replaced with a new stone."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement> <http://www.w3.org/2000/01/rdf-schema#label> "Steinaustausch"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement> <http://www.w3.org/2000/01/rdf-schema#label> "Stone Replacement"@en .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure
+<https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure> .
+<https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Constructive measure that does restore the structural capacity of the stone and in consequence of the building element in which it is aggregated."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Statisch-Konstruktive Maßnahme"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Structural constructive measure"@en .
+# 
+# https://www.bim-sis.de/ontology/damage/srmo#WetCleaning
+<https://www.bim-sis.de/ontology/damage/srmo#WetCleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.bim-sis.de/ontology/damage/srmo#WetCleaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning> .
+<https://www.bim-sis.de/ontology/damage/srmo#WetCleaning> <http://www.w3.org/2000/01/rdf-schema#comment> "Cleaning measure that does involve the use of wet substances, such as water to clean the stone."@en .
+<https://www.bim-sis.de/ontology/damage/srmo#WetCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Nassreinigung"@de .
+<https://www.bim-sis.de/ontology/damage/srmo#WetCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Wet Cleaning"@en .
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Al-Hakam Hamdan" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Peter Katranuschkov" .
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

@@ -1,0 +1,450 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Al-Hakam Hamdan"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Peter Katranuschkov"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Al-Hakam Hamdan"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Peter Katranuschkov"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/cto#RepairTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/sco#StoneComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology that defines renovation measures applied for stone maintenance."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2021-01-13"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/1.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2021-08-13"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Stone Renovation Measures Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "srmo"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://www.bim-sis.de/ontology/damage/srmo#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo/0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Anchoring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anchoring"
+  }, {
+    "@language" : "de",
+    "@value" : "Verankern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stone cleaning measure that involves the use of biocides in order to deter, render harmless or destroy harmful organisms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Biocidal Treatment"
+  }, {
+    "@language" : "de",
+    "@value" : "Biozide Behandlung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Bracing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bracing"
+  }, {
+    "@language" : "de",
+    "@value" : "Verklammern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stone Cleaning measure that involves the use of chemical substances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chemical Cleaning"
+  }, {
+    "@language" : "de",
+    "@value" : "Chemische Abnahme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Cleaning"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Cleaning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Renovation measure that aims for cleaning a stones surface from impuritites and contamination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cleaning"
+  }, {
+    "@language" : "de",
+    "@value" : "Reinigung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#CrackFilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measure that fills the crack of a stone. Usually does not fix the damage source, thus a reoccurence of the same damage is possible."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Crack Filling"
+  }, {
+    "@language" : "de",
+    "@value" : "Rissverfüllung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#DryCleaning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cleaning measure that does not involve the use of wet substances, such as water to clean the stone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dry Cleaning"
+  }, {
+    "@language" : "de",
+    "@value" : "Trockenreinigung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Flaming",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Application of high temperature to the surface of stones to remove organic material through burning."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Abflammen"
+  }, {
+    "@language" : "en",
+    "@value" : "Flame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inspection and repair of minor defects or damages on the stone to prevent their aggravation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maintenance Measure"
+  }, {
+    "@language" : "de",
+    "@value" : "Wartungsarbeiten"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stone Cleaning measure that involves the use of mechanic-based procedures to remove inpurities and contamination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mechanical Cleaning"
+  }, {
+    "@language" : "de",
+    "@value" : "Mechanische Abnahme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Cleaning"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Needling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Needling"
+  }, {
+    "@language" : "de",
+    "@value" : "Vernadeln"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Constructive measure that does not significantly restore the structural capacity of the stone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Nicht Statisch-Konstruktive Maßnahmen"
+  }, {
+    "@language" : "en",
+    "@value" : "Non-structural constructive measures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Plastering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Applies or renews the plaster of the building element."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Neuputz"
+  }, {
+    "@language" : "en",
+    "@value" : "Plastering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#Pressing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pressing"
+  }, {
+    "@language" : "de",
+    "@value" : "Verpressen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measure that involves the use of biocides in order to prevent the settlement of organic material on the stone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Preventive Biocidal Treatment"
+  }, {
+    "@language" : "de",
+    "@value" : "Präventive Biozide Behandlung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measure or steps taken for preventing the stone deterioration preemptively before damages or defects occur."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Preventive Measure"
+  }, {
+    "@language" : "de",
+    "@value" : "Präventive Maßnahme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measure, which secures the stone and prevent further degradation of its material due to structural effects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Securing Measure"
+  }, {
+    "@language" : "de",
+    "@value" : "Sicherungsmaßnahme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneComplement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measure in which missing parts of a stone are complemented."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Steinergänzung"
+  }, {
+    "@language" : "en",
+    "@value" : "Stone Complement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A repair task that specifically aims for the renovation of deteriorated stone structures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Steinsanierungsmaßnahme"
+  }, {
+    "@language" : "en",
+    "@value" : "Stone repair task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/cto#RepairTask"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measure in which a stone is completely replaced with a new stone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Steinaustausch"
+  }, {
+    "@language" : "en",
+    "@value" : "Stone Replacement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Constructive measure that does restore the structural capacity of the stone and in consequence of the building element in which it is aggregated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Statisch-Konstruktive Maßnahme"
+  }, {
+    "@language" : "en",
+    "@value" : "Structural constructive measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#WetCleaning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cleaning measure that does involve the use of wet substances, such as water to clean the stone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Nassreinigung"
+  }, {
+    "@language" : "en",
+    "@value" : "Wet Cleaning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning"
+  } ]
+}, {
+  "@id" : "https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/sco#StoneComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Empfohlene Sanierungsmaßnahme"
+  }, {
+    "@language" : "en",
+    "@value" : "Recommended repair task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"
+  } ]
+} ]
