@@ -16,5 +16,3 @@ The most recent version of SRMO is always available in this Github repository
 [Al-Hakam Hamdan](https://github.com/Alhakam) - TU Dresden
 
 Peter Katranuschkov - TU Dresden
-
-Mushtak Seeaed - TU Dresden
