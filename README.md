@@ -4,9 +4,9 @@ The Stone Renovation Measures Ontology (SRMO) is an extension of the Constructio
 
 ## HTML documentation and raw ontology per serialisation
 
-* base URI: [https://w3id.org/nsd#](https://alhakam.github.io/nsd/#)
-* Canonical URI for the HTML representation: [https://w3id.org/nsd/srmo.html](https://alhakam.github.io/srmo/#)
-* Canonical URI for the Turtle representation: [https://w3id.org/nsd/srmo.ttl](https://alhakam.github.io/srmo/ontology.ttl)
+* base URI: [https://w3id.org/srmo#](https://alhakam.github.io/srmo/#)
+* Canonical URI for the HTML representation: [https://w3id.org/srmo/srmo.html](https://alhakam.github.io/srmo/#)
+* Canonical URI for the Turtle representation: [https://w3id.org/srmo/srmo.ttl](https://alhakam.github.io/srmo/ontology.ttl)
 * Canonical URI for the n-triples representation: [https://w3id.org/srmo/srmo.nt](https://alhakam.github.io/srmo/ontology.nt)
 * Canonical URI for the json-ld representation: [https://w3id.org/srmo/srmo.jsonld](https://alhakam.github.io/srmo/ontology.json)
 * Canonical URI for the RDF/XML representation: [https://w3id.org/srmo/srmo.rdf](https://alhakam.github.io/srmo/ontology.xml)
