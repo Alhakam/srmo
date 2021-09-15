@@ -29,7 +29,7 @@
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-13</terms:modified>
         <terms:title xml:lang="en">Stone Renovation Measures Ontology</terms:title>
         <vann:preferredNamespacePrefix>srmo</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://www.bim-sis.de/ontology/damage/srmo#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/srmo#</vann:preferredNamespaceUri>
         <owl:versionInfo>0.1</owl:versionInfo>
     </owl:Ontology>
     
@@ -66,12 +66,12 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask -->
+    <!-- https://w3id.org/srmo#recommendedRepairTask -->
 
 
-    <owl:ObjectProperty rdf:about="https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask">
+    <owl:ObjectProperty rdf:about="https://w3id.org/srmo#recommendedRepairTask">
         <rdfs:domain rdf:resource="https://www.bim-sis.de/ontology/damage/sco#StoneComponent"/>
-        <rdfs:range rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"/>
+        <rdfs:range rdf:resource="https://w3id.org/srmo#StoneRepairTask"/>
         <rdfs:label xml:lang="de">Empfohlene Sanierungsmaßnahme</rdfs:label>
         <rdfs:label xml:lang="en">Recommended repair task</rdfs:label>
     </owl:ObjectProperty>
@@ -104,29 +104,22 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/sco#StoneComponent -->
+    <!-- https://w3id.org/srmo#Anchoring -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/sco#StoneComponent"/>
-    
-
-
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#Anchoring -->
-
-
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#Anchoring">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#Anchoring">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StructuralConstructiveMeasure"/>
         <rdfs:label xml:lang="en">Anchoring</rdfs:label>
         <rdfs:label xml:lang="de">Verankern</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment -->
+    <!-- https://w3id.org/srmo#BiocidalTreatment -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#BiocidalTreatment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#ChemicalCleaning"/>
         <rdfs:comment xml:lang="en">Stone cleaning measure that involves the use of biocides in order to deter, render harmless or destroy harmful organisms.</rdfs:comment>
         <rdfs:label xml:lang="en">Biocidal Treatment</rdfs:label>
         <rdfs:label xml:lang="de">Biozide Behandlung</rdfs:label>
@@ -134,22 +127,22 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#Bracing -->
+    <!-- https://w3id.org/srmo#Bracing -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#Bracing">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#Bracing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StructuralConstructiveMeasure"/>
         <rdfs:label xml:lang="en">Bracing</rdfs:label>
         <rdfs:label xml:lang="de">Verklammern</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning -->
+    <!-- https://w3id.org/srmo#ChemicalCleaning -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#Cleaning"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#ChemicalCleaning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#Cleaning"/>
         <rdfs:comment xml:lang="en">Stone Cleaning measure that involves the use of chemical substances.</rdfs:comment>
         <rdfs:label xml:lang="en">Chemical Cleaning</rdfs:label>
         <rdfs:label xml:lang="de">Chemische Abnahme</rdfs:label>
@@ -157,11 +150,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#Cleaning -->
+    <!-- https://w3id.org/srmo#Cleaning -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#Cleaning">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#Cleaning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StoneRepairTask"/>
         <rdfs:comment xml:lang="en">Renovation measure that aims for cleaning a stones surface from impuritites and contamination.</rdfs:comment>
         <rdfs:label xml:lang="en">Cleaning</rdfs:label>
         <rdfs:label xml:lang="de">Reinigung</rdfs:label>
@@ -169,11 +162,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#CrackFilling -->
+    <!-- https://w3id.org/srmo#CrackFilling -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#CrackFilling">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#CrackFilling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#NonStructuralConstructiveMeasure"/>
         <rdfs:comment xml:lang="en">Measure that fills the crack of a stone. Usually does not fix the damage source, thus a reoccurence of the same damage is possible.</rdfs:comment>
         <rdfs:label xml:lang="en">Crack Filling</rdfs:label>
         <rdfs:label xml:lang="de">Rissverfüllung</rdfs:label>
@@ -181,11 +174,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#DryCleaning -->
+    <!-- https://w3id.org/srmo#DryCleaning -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#DryCleaning">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#DryCleaning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#MechanicalCleaning"/>
         <rdfs:comment xml:lang="en">Cleaning measure that does not involve the use of wet substances, such as water to clean the stone.</rdfs:comment>
         <rdfs:label xml:lang="en">Dry Cleaning</rdfs:label>
         <rdfs:label xml:lang="de">Trockenreinigung</rdfs:label>
@@ -193,11 +186,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#Flaming -->
+    <!-- https://w3id.org/srmo#Flaming -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#Flaming">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#Flaming">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#ChemicalCleaning"/>
         <rdfs:comment xml:lang="en">Application of high temperature to the surface of stones to remove organic material through burning.</rdfs:comment>
         <rdfs:label xml:lang="de">Abflammen</rdfs:label>
         <rdfs:label xml:lang="en">Flame</rdfs:label>
@@ -205,11 +198,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure -->
+    <!-- https://w3id.org/srmo#Maintenance_measure -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#Maintenance_measure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#PreventiveMeasure"/>
         <rdfs:comment xml:lang="en">Inspection and repair of minor defects or damages on the stone to prevent their aggravation.</rdfs:comment>
         <rdfs:label xml:lang="en">Maintenance Measure</rdfs:label>
         <rdfs:label xml:lang="de">Wartungsarbeiten</rdfs:label>
@@ -217,11 +210,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning -->
+    <!-- https://w3id.org/srmo#MechanicalCleaning -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#Cleaning"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#MechanicalCleaning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#Cleaning"/>
         <rdfs:comment xml:lang="en">Stone Cleaning measure that involves the use of mechanic-based procedures to remove inpurities and contamination.</rdfs:comment>
         <rdfs:label xml:lang="en">Mechanical Cleaning</rdfs:label>
         <rdfs:label xml:lang="de">Mechanische Abnahme</rdfs:label>
@@ -229,22 +222,22 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#Needling -->
+    <!-- https://w3id.org/srmo#Needling -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#Needling">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#Needling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StructuralConstructiveMeasure"/>
         <rdfs:label xml:lang="en">Needling</rdfs:label>
         <rdfs:label xml:lang="de">Vernadeln</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure -->
+    <!-- https://w3id.org/srmo#NonStructuralConstructiveMeasure -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#NonStructuralConstructiveMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#SecuringMeasure"/>
         <rdfs:comment xml:lang="en">Constructive measure that does not significantly restore the structural capacity of the stone.</rdfs:comment>
         <rdfs:label xml:lang="de">Nicht Statisch-Konstruktive Maßnahmen</rdfs:label>
         <rdfs:label xml:lang="en">Non-structural constructive measures</rdfs:label>
@@ -252,11 +245,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#Plastering -->
+    <!-- https://w3id.org/srmo#Plastering -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#Plastering">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#Plastering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#PreventiveMeasure"/>
         <rdfs:comment xml:lang="en">Applies or renews the plaster of the building element.</rdfs:comment>
         <rdfs:label xml:lang="de">Neuputz</rdfs:label>
         <rdfs:label xml:lang="en">Plastering</rdfs:label>
@@ -264,22 +257,22 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#Pressing -->
+    <!-- https://w3id.org/srmo#Pressing -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#Pressing">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#Pressing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StructuralConstructiveMeasure"/>
         <rdfs:label xml:lang="en">Pressing</rdfs:label>
         <rdfs:label xml:lang="de">Verpressen</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment -->
+    <!-- https://w3id.org/srmo#PreventiveBiocidalTreatment -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#PreventiveBiocidalTreatment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#PreventiveMeasure"/>
         <rdfs:comment xml:lang="en">Measure that involves the use of biocides in order to prevent the settlement of organic material on the stone.</rdfs:comment>
         <rdfs:label xml:lang="en">Preventive Biocidal Treatment</rdfs:label>
         <rdfs:label xml:lang="de">Präventive Biozide Behandlung</rdfs:label>
@@ -287,11 +280,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure -->
+    <!-- https://w3id.org/srmo#PreventiveMeasure -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#PreventiveMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StoneRepairTask"/>
         <rdfs:comment xml:lang="en">Measure or steps taken for preventing the stone deterioration preemptively before damages or defects occur.</rdfs:comment>
         <rdfs:label xml:lang="en">Preventive Measure</rdfs:label>
         <rdfs:label xml:lang="de">Präventive Maßnahme</rdfs:label>
@@ -299,11 +292,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure -->
+    <!-- https://w3id.org/srmo#SecuringMeasure -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#SecuringMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StoneRepairTask"/>
         <rdfs:comment xml:lang="en">Measure, which secures the stone and prevent further degradation of its material due to structural effects.</rdfs:comment>
         <rdfs:label xml:lang="en">Securing Measure</rdfs:label>
         <rdfs:label xml:lang="de">Sicherungsmaßnahme</rdfs:label>
@@ -311,11 +304,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#StoneComplement -->
+    <!-- https://w3id.org/srmo#StoneComplement -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#StoneComplement">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#StoneComplement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StoneRepairTask"/>
         <rdfs:comment xml:lang="en">Measure in which missing parts of a stone are complemented.</rdfs:comment>
         <rdfs:label xml:lang="de">Steinergänzung</rdfs:label>
         <rdfs:label xml:lang="en">Stone Complement</rdfs:label>
@@ -323,10 +316,10 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask -->
+    <!-- https://w3id.org/srmo#StoneRepairTask -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask">
+    <owl:Class rdf:about="https://w3id.org/srmo#StoneRepairTask">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cto#RepairTask"/>
         <rdfs:comment xml:lang="en">A repair task that specifically aims for the renovation of deteriorated stone structures.</rdfs:comment>
         <rdfs:label xml:lang="de">Steinsanierungsmaßnahme</rdfs:label>
@@ -335,11 +328,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement -->
+    <!-- https://w3id.org/srmo#StoneReplacement -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#StoneReplacement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#StoneRepairTask"/>
         <rdfs:comment xml:lang="en">Measure in which a stone is completely replaced with a new stone.</rdfs:comment>
         <rdfs:label xml:lang="de">Steinaustausch</rdfs:label>
         <rdfs:label xml:lang="en">Stone Replacement</rdfs:label>
@@ -347,11 +340,11 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure -->
+    <!-- https://w3id.org/srmo#StructuralConstructiveMeasure -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#StructuralConstructiveMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#SecuringMeasure"/>
         <rdfs:comment xml:lang="en">Constructive measure that does restore the structural capacity of the stone and in consequence of the building element in which it is aggregated.</rdfs:comment>
         <rdfs:label xml:lang="de">Statisch-Konstruktive Maßnahme</rdfs:label>
         <rdfs:label xml:lang="en">Structural constructive measure</rdfs:label>
@@ -359,15 +352,22 @@
     
 
 
-    <!-- https://www.bim-sis.de/ontology/damage/srmo#WetCleaning -->
+    <!-- https://w3id.org/srmo#WetCleaning -->
 
 
-    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/srmo#WetCleaning">
-        <rdfs:subClassOf rdf:resource="https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning"/>
+    <owl:Class rdf:about="https://w3id.org/srmo#WetCleaning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/srmo#MechanicalCleaning"/>
         <rdfs:comment xml:lang="en">Cleaning measure that does involve the use of wet substances, such as water to clean the stone.</rdfs:comment>
         <rdfs:label xml:lang="de">Nassreinigung</rdfs:label>
         <rdfs:label xml:lang="en">Wet Cleaning</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://www.bim-sis.de/ontology/damage/sco#StoneComponent -->
+
+
+    <owl:Class rdf:about="https://www.bim-sis.de/ontology/damage/sco#StoneComponent"/>
     <rdf:Description rdf:nodeID="genid3">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <foaf:name>Al-Hakam Hamdan</foaf:name>

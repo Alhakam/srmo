@@ -6,14 +6,14 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cto: <https://w3id.org/cto#> .
-@prefix srmo: <https://www.bim-sis.de/ontology/damage/srmo#> .
+@prefix srmo: <https://w3id.org/srmo#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 <https://www.bim-sis.de/ontology/damage/srmo> rdf:type owl:Ontology ;
-                                               owl:versionIRI <https://www.bim-sis.de/ontology/damage/srmo/0.1> ;
-                                               dcterms:creator [ rdf:type foaf:Person ;
+                                              owl:versionIRI <https://www.bim-sis.de/ontology/damage/srmo/0.1> ;
+                                              dcterms:creator [ rdf:type foaf:Person ;
                                                                  foaf:name "Al-Hakam Hamdan"
                                                                ] ,
                                                                [ rdf:type foaf:Person ;
@@ -25,14 +25,14 @@ dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
 dcterms:modified "2021-08-13"^^xsd:date ;
 dcterms:title "Stone Renovation Measures Ontology"@en ;
 vann:preferredNamespacePrefix "srmo" ;
-vann:preferredNamespaceUri "https://www.bim-sis.de/ontology/damage/srmo#" ;
+vann:preferredNamespaceUri "https://w3id.org/srmo#" ;
 owl:versionInfo "0.1" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://www.bim-sis.de/ontology/damage/srmo#recommendedRepairTask
+###  https://w3id.org/srmo#recommendedRepairTask
 srmo:recommendedRepairTask rdf:type owl:ObjectProperty ;
                            rdfs:domain sco:StoneComponent ;
                            rdfs:range srmo:StoneRepairTask ;
@@ -44,14 +44,14 @@ srmo:recommendedRepairTask rdf:type owl:ObjectProperty ;
 #################################################################
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#Anchoring
+###  https://w3id.org/srmo#Anchoring
 srmo:Anchoring rdf:type owl:Class ;
                rdfs:subClassOf srmo:StructuralConstructiveMeasure ;
                rdfs:label "Anchoring"@en ,
                           "Verankern"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#BiocidalTreatment
+###  https://w3id.org/srmo#BiocidalTreatment
 srmo:BiocidalTreatment rdf:type owl:Class ;
                        rdfs:subClassOf srmo:ChemicalCleaning ;
                        rdfs:comment "Stone cleaning measure that involves the use of biocides in order to deter, render harmless or destroy harmful organisms."@en ;
@@ -59,14 +59,14 @@ srmo:BiocidalTreatment rdf:type owl:Class ;
                                   "Biozide Behandlung"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#Bracing
+###  https://w3id.org/srmo#Bracing
 srmo:Bracing rdf:type owl:Class ;
              rdfs:subClassOf srmo:StructuralConstructiveMeasure ;
              rdfs:label "Bracing"@en ,
                         "Verklammern"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#ChemicalCleaning
+###  https://w3id.org/srmo#ChemicalCleaning
 srmo:ChemicalCleaning rdf:type owl:Class ;
                       rdfs:subClassOf srmo:Cleaning ;
                       rdfs:comment "Stone Cleaning measure that involves the use of chemical substances."@en ;
@@ -74,7 +74,7 @@ srmo:ChemicalCleaning rdf:type owl:Class ;
                                  "Chemische Abnahme"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#Cleaning
+###  https://w3id.org/srmo#Cleaning
 srmo:Cleaning rdf:type owl:Class ;
               rdfs:subClassOf srmo:StoneRepairTask ;
               rdfs:comment "Renovation measure that aims for cleaning a stones surface from impuritites and contamination."@en ;
@@ -82,7 +82,7 @@ srmo:Cleaning rdf:type owl:Class ;
                          "Reinigung"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#CrackFilling
+###  https://w3id.org/srmo#CrackFilling
 srmo:CrackFilling rdf:type owl:Class ;
                   rdfs:subClassOf srmo:NonStructuralConstructiveMeasure ;
                   rdfs:comment "Measure that fills the crack of a stone. Usually does not fix the damage source, thus a reoccurence of the same damage is possible."@en ;
@@ -90,7 +90,7 @@ srmo:CrackFilling rdf:type owl:Class ;
                              "Rissverfüllung"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#DryCleaning
+###  https://w3id.org/srmo#DryCleaning
 srmo:DryCleaning rdf:type owl:Class ;
                  rdfs:subClassOf srmo:MechanicalCleaning ;
                  rdfs:comment "Cleaning measure that does not involve the use of wet substances, such as water to clean the stone."@en ;
@@ -98,7 +98,7 @@ srmo:DryCleaning rdf:type owl:Class ;
                             "Trockenreinigung"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#Flaming
+###  https://w3id.org/srmo#Flaming
 srmo:Flaming rdf:type owl:Class ;
              rdfs:subClassOf srmo:ChemicalCleaning ;
              rdfs:comment "Application of high temperature to the surface of stones to remove organic material through burning."@en ;
@@ -106,7 +106,7 @@ srmo:Flaming rdf:type owl:Class ;
                         "Flame"@en .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#Maintenance_measure
+###  https://w3id.org/srmo#Maintenance_measure
 srmo:Maintenance_measure rdf:type owl:Class ;
                          rdfs:subClassOf srmo:PreventiveMeasure ;
                          rdfs:comment "Inspection and repair of minor defects or damages on the stone to prevent their aggravation."@en ;
@@ -114,7 +114,7 @@ srmo:Maintenance_measure rdf:type owl:Class ;
                                     "Wartungsarbeiten"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#MechanicalCleaning
+###  https://w3id.org/srmo#MechanicalCleaning
 srmo:MechanicalCleaning rdf:type owl:Class ;
                         rdfs:subClassOf srmo:Cleaning ;
                         rdfs:comment "Stone Cleaning measure that involves the use of mechanic-based procedures to remove inpurities and contamination."@en ;
@@ -122,14 +122,14 @@ srmo:MechanicalCleaning rdf:type owl:Class ;
                                    "Mechanische Abnahme"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#Needling
+###  https://w3id.org/srmo#Needling
 srmo:Needling rdf:type owl:Class ;
               rdfs:subClassOf srmo:StructuralConstructiveMeasure ;
               rdfs:label "Needling"@en ,
                          "Vernadeln"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#NonStructuralConstructiveMeasure
+###  https://w3id.org/srmo#NonStructuralConstructiveMeasure
 srmo:NonStructuralConstructiveMeasure rdf:type owl:Class ;
                                       rdfs:subClassOf srmo:SecuringMeasure ;
                                       rdfs:comment "Constructive measure that does not significantly restore the structural capacity of the stone."@en ;
@@ -137,7 +137,7 @@ srmo:NonStructuralConstructiveMeasure rdf:type owl:Class ;
                                                  "Non-structural constructive measures"@en .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#Plastering
+###  https://w3id.org/srmo#Plastering
 srmo:Plastering rdf:type owl:Class ;
                 rdfs:subClassOf srmo:PreventiveMeasure ;
                 rdfs:comment "Applies or renews the plaster of the building element."@en ;
@@ -145,14 +145,14 @@ srmo:Plastering rdf:type owl:Class ;
                            "Plastering"@en .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#Pressing
+###  https://w3id.org/srmo#Pressing
 srmo:Pressing rdf:type owl:Class ;
               rdfs:subClassOf srmo:StructuralConstructiveMeasure ;
               rdfs:label "Pressing"@en ,
                          "Verpressen"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#PreventiveBiocidalTreatment
+###  https://w3id.org/srmo#PreventiveBiocidalTreatment
 srmo:PreventiveBiocidalTreatment rdf:type owl:Class ;
                                  rdfs:subClassOf srmo:PreventiveMeasure ;
                                  rdfs:comment "Measure that involves the use of biocides in order to prevent the settlement of organic material on the stone."@en ;
@@ -160,7 +160,7 @@ srmo:PreventiveBiocidalTreatment rdf:type owl:Class ;
                                             "Präventive Biozide Behandlung"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#PreventiveMeasure
+###  https://w3id.org/srmo#PreventiveMeasure
 srmo:PreventiveMeasure rdf:type owl:Class ;
                        rdfs:subClassOf srmo:StoneRepairTask ;
                        rdfs:comment "Measure or steps taken for preventing the stone deterioration preemptively before damages or defects occur."@en ;
@@ -168,7 +168,7 @@ srmo:PreventiveMeasure rdf:type owl:Class ;
                                   "Präventive Maßnahme"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#SecuringMeasure
+###  https://w3id.org/srmo#SecuringMeasure
 srmo:SecuringMeasure rdf:type owl:Class ;
                      rdfs:subClassOf srmo:StoneRepairTask ;
                      rdfs:comment "Measure, which secures the stone and prevent further degradation of its material due to structural effects."@en ;
@@ -176,7 +176,7 @@ srmo:SecuringMeasure rdf:type owl:Class ;
                                 "Sicherungsmaßnahme"@de .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#StoneComplement
+###  https://w3id.org/srmo#StoneComplement
 srmo:StoneComplement rdf:type owl:Class ;
                      rdfs:subClassOf srmo:StoneRepairTask ;
                      rdfs:comment "Measure in which missing parts of a stone are complemented."@en ;
@@ -184,7 +184,7 @@ srmo:StoneComplement rdf:type owl:Class ;
                                 "Stone Complement"@en .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#StoneRepairTask
+###  https://w3id.org/srmo#StoneRepairTask
 srmo:StoneRepairTask rdf:type owl:Class ;
                      rdfs:subClassOf cto:RepairTask ;
                      rdfs:comment "A repair task that specifically aims for the renovation of deteriorated stone structures."@en ;
@@ -192,7 +192,7 @@ srmo:StoneRepairTask rdf:type owl:Class ;
                                 "Stone repair task"@en .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#StoneReplacement
+###  https://w3id.org/srmo#StoneReplacement
 srmo:StoneReplacement rdf:type owl:Class ;
                       rdfs:subClassOf srmo:StoneRepairTask ;
                       rdfs:comment "Measure in which a stone is completely replaced with a new stone."@en ;
@@ -200,7 +200,7 @@ srmo:StoneReplacement rdf:type owl:Class ;
                                  "Stone Replacement"@en .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#StructuralConstructiveMeasure
+###  https://w3id.org/srmo#StructuralConstructiveMeasure
 srmo:StructuralConstructiveMeasure rdf:type owl:Class ;
                                    rdfs:subClassOf srmo:SecuringMeasure ;
                                    rdfs:comment "Constructive measure that does restore the structural capacity of the stone and in consequence of the building element in which it is aggregated."@en ;
@@ -208,7 +208,7 @@ srmo:StructuralConstructiveMeasure rdf:type owl:Class ;
                                               "Structural constructive measure"@en .
 
 
-###  https://www.bim-sis.de/ontology/damage/srmo#WetCleaning
+###  https://w3id.org/srmo#WetCleaning
 srmo:WetCleaning rdf:type owl:Class ;
                  rdfs:subClassOf srmo:MechanicalCleaning ;
                  rdfs:comment "Cleaning measure that does involve the use of wet substances, such as water to clean the stone."@en ;
